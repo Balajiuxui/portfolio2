@@ -1,0 +1,209 @@
+:root {
+  --primary-colour: #E63946;
+  --black: #000;
+  --white: #FFF;
+  --secondary-black: #1A1A1A;
+  --third-black: #333;
+  --fourth-black: #4C4C4C;
+
+  --grey: #666;
+  --grey2: #808080;
+  --grey3: #999;
+  --grey4: #B3B3B3;
+  --grey5: #CCC;
+  --grey6: #D9D9D9;
+
+  --white2: #E5E5E5;
+  --white5: #F2F2F2;
+}
+
+
+/* ========== CLASH DISPLAY HEADINGS WITH PADDING ========== */
+
+.heading-1 {
+  /* color: #000; */
+  font-family: "Clash Display", sans-serif;
+  font-size: 68px;
+  font-weight: 700; /* Bold */
+  line-height: 76px;
+  letter-spacing: -0.5px;
+  padding: 32px 0 24px 0; /* top right bottom left */
+}
+
+.heading-2 {
+  /* color: #000; */
+  font-family: "Clash Display", sans-serif;
+  font-size: 42px;
+  font-weight: 600; /* SemiBold */
+  line-height: 52px;
+  letter-spacing: -0.25px;
+  padding: 24px 0 20px 0;
+}
+
+.heading-3 {
+  /* color: #000; */
+  font-family: "Clash Display", sans-serif;
+  font-size: 32px;
+  font-weight: 500; /* Medium */
+  line-height: 40px;
+  letter-spacing: -0.2px;
+  padding: 20px 0 16px 0;
+}
+
+.heading-4 {
+  /* color: #000; */
+  font-family: "Clash Display", sans-serif;
+  font-size: 26px;
+  font-weight: 500; /* Medium */
+  line-height: 36px;
+  letter-spacing: -0.1px;
+  padding: 16px 0 12px 0;
+}
+
+.heading-5 {
+  /* color: #000; */
+  font-family: "Clash Display", sans-serif;
+  font-size: 20px;
+  font-weight: 400; /* Regular */
+  line-height: 30px;
+  letter-spacing: 0px;
+  padding: 12px 0 8px 0;
+}
+
+.heading-6 {
+  /* color: #000; */
+  font-family: "Clash Display", sans-serif;
+  font-size: 18px;
+  font-weight: 500; /* Medium */
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  padding: 8px 0 4px 0;
+}
+
+.heading-0 {
+  /* color: #000; */
+  font-family: "Clash Display", sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 104px;
+  letter-spacing: -1px;
+  padding: 40px 0 32px 0;
+}
+
+.heading-7 {
+  /* color: #000; */
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  padding: 16px 0px 12px 0px;
+}
+
+.heading-8 {
+  /* color: #000; */
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  padding: 12px 0px 8px 0px;
+}
+
+/* ========== BODY TEXT STYLES ========== */
+
+.body-large {
+  display: inline-flex;
+  padding: 16px 0px 12px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  /* color: #000; */
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.body-base {
+  display: inline-flex;
+  padding: 16px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  /* color: #000; */
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.body-small {
+  display: inline-flex;
+  padding: 12px 0px 8px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  /* color: #000; */
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* ========== BUTTON STYLE ========== */
+
+.button {
+  display: inline-flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  /* color: #000; */
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* ========== OVERLINE STYLE ========== */
+
+.overline {
+  display: inline-flex;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  /* color: #000; */
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+/* ========== CAPTION STYLE ========== */
+
+.caption {
+  display: inline-flex;
+  padding: 4px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  /* color: #000; */
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+}
+

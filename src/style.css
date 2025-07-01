@@ -1,0 +1,92 @@
+@import url('typography.css');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;     /* or 1440px for large layouts */
+  margin: 0 auto;         /* center align */
+  padding: 0 32px;        /* ← your horizontal margin */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+.heading-1
+{
+  color: var(--primary-colour);
+}
+
+a
+{
+text-decoration: none;
+}
+
+.nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+
+nav{
+  position: fixed;
+  width: 100%;
+  z-index: 1000; /* optional: ensure it stays above content */
+  background: var(--secondary-black, #1A1A1A);
+}
+
+.navbar2
+{
+  height: 76px; /* desktop height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  background: var(--secondary-black, #1A1A1A);
+  
+}
+
+.logo
+{
+  color: var( --white);
+}
+
+.nav-links *
+{
+color: var(--white2, #E5E5E5);
+}
+
+.landing
+{
+background: var(--secondary-black, #1A1A1A);
+}
+
+.landingsectionh1{
+  color: var(--white2, #E5E5E5);
+  padding: 15% 0px 32px 0px !important;
+}
+
+.section-divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 40px 0;
+}
+
+.body-large
+{
+  color: var(--white, #FFF);
+}
