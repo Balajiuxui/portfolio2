@@ -29,6 +29,8 @@ html {
   }
 }
 
+
+
 .heading-1
 {
   color: var(--primary-colour);
@@ -114,7 +116,16 @@ align-items: center;
 gap: 10px;
 background: var(--primary-colour, #E63946);
 color: var(--white, #FFF);
+color: var(--white, #FFF);
 
+/* button */
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; /* 175% */
+letter-spacing: 0.5px;
+text-transform: uppercase;
 }
 
 .landing-section-below-content
@@ -274,4 +285,18 @@ padding: 16px 0px;
   align-items: flex-start;
   width: 100%;
   gap: 10%;
+  padding-bottom: 5%;
+}
+
+.ux-process-last-test
+{
+color: var(--white, #FFF);
+text-align: center;
+width: 100%;
+padding: 2% 15% 20% 15% !important;
+}
+
+.case-study-title
+{
+  color: var(--secondary-black, #1A1A1A);
 }

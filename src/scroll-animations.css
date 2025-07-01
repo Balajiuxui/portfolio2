@@ -1,0 +1,44 @@
+@import url('typography.css');
+@import url('style.css');
+
+/* Common reveal base */
+.reveal {
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+
+/* From Top */
+.reveal.from-top {
+  transform: translateY(-50px);
+}
+.reveal.from-top.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* From Bottom */
+.reveal.from-bottom {
+  transform: translateY(50px);
+}
+.reveal.from-bottom.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* From Left */
+.reveal.from-left {
+  transform: translateX(-50px);
+}
+.reveal.from-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* From Right */
+.reveal.from-right {
+  transform: translateX(50px);
+}
+.reveal.from-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
