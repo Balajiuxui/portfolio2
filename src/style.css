@@ -211,3 +211,67 @@ width: 50%;
 padding-top: 56px;
 padding-bottom: 96px;
 }
+
+
+.ux-process-section-number
+{
+  color: var(--grey3, #999);
+}
+
+.ux-process-section-title
+{
+color: var(--white2, #E5E5E5);
+}
+
+.eachblock-title
+{
+display: flex;
+gap: 10px;
+border-bottom: 0.5px solid var(--grey5, #CCC);
+}
+
+.eachblockpara
+{
+color: var(--white, #FFF);
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+padding: 10px 0px;
+}
+
+.overline-eachblock
+{
+  color: var(--white5, #F2F2F2);
+  padding-top: 16px !important;
+}
+
+ul {
+  list-style-position: inside; /* bullet will align inside padding */
+}
+
+.eachblocksubtitle
+{
+color: var(--grey-2, #808080);
+padding: 16px 0px;
+}
+
+.eachblock
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90%
+}
+
+.eachblockrow
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 10%;
+}
