@@ -1,4 +1,7 @@
 @import url('typography.css');
+html {
+  scroll-behavior: smooth;
+}
 
 *{
   margin: 0;
@@ -9,9 +12,9 @@
 }
 .container {
   width: 100%;
-  max-width: 1200px;     /* or 1440px for large layouts */
+  /* max-width: 1200px;     or 1440px for large layouts */
   margin: 0 auto;         /* center align */
-  padding: 0 32px;        /* ← your horizontal margin */
+  padding: 0 48px;        /* ← your horizontal margin */
 }
 
 @media (max-width: 768px) {
@@ -55,8 +58,11 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 32px;
+  padding: 0 48px;
   background: var(--secondary-black, #1A1A1A);
+  transform: translateY(0);
+  transition: transform 0.8s ease-in-out;
+   will-change: transform;
   
 }
 
@@ -70,9 +76,14 @@ nav{
 color: var(--white2, #E5E5E5);
 }
 
+.hide-nav {
+ transform: translateY(-100%);
+}
+
 .landing
 {
 background: var(--secondary-black, #1A1A1A);
+
 }
 
 .landingsectionh1{
@@ -83,10 +94,79 @@ background: var(--secondary-black, #1A1A1A);
 .section-divider {
   height: 1px;
   background-color: #e0e0e0;
-  margin: 40px 0;
+margin-bottom: 12px;
 }
 
 .body-large
 {
   color: var(--white, #FFF);
+  width: 50%;
+}
+
+.view-work-btn
+{
+  all: unset;
+  cursor: pointer;
+display: inline-flex;
+padding: 12px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+background: var(--primary-colour, #E63946);
+color: var(--white, #FFF);
+
+}
+
+.landing-section-below-content
+{
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mail-id-text
+{
+  color: var(--white5, #F2F2F2);
+}
+
+.icon-wrapper
+{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+gap: 16px;
+padding-bottom: 5%;
+}
+
+
+.mockup-section-heading
+{
+color: var(--white5, #F2F2F2);
+text-align: center;
+}
+
+.mockup-section
+{
+  width: 100%;
+  background: var(--secondary-black, #1A1A1A);
+  display: flex;
+  align-items: center;     /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  min-height: 100vh;        /* Full viewport height */
+  text-align: center;
+}
+
+.mockup-section-para
+{
+  text-align: center;
+  color: var(--white2, #E5E5E5);
+  padding-bottom: 2% !important;
+  
+}
+
+.image-mockup {
+  height: auto;
+  width: 80%;
+  margin: 10px;
 }
