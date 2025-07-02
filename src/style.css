@@ -323,14 +323,15 @@ color: var(--third-black, #333);
 }
 
 .case-study-image-box{
-  width: 32%;
-  max-width: 600px;
+    width: 100%;
+  
   aspect-ratio: 1 / 1;
   background-image: url('images/case-pingis.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 4px;
+   transition: all 0.4s ease;
 }
 /* Smooth transitions for child elements */
 .case-study-image-box,
@@ -365,4 +366,20 @@ color: var(--third-black, #333);
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 10%; /* ← add space between the containers */
+}
+
+.image-wrapper {
+  width: 32%;
+  max-width: 600px;
+}
+
+.aboutus
+{
+  background: var(--secondary-black, #1A1A1A);
+  width: 100%;
+}
+
+.aboutus-title
+{
+  color: #FFF;
 }
