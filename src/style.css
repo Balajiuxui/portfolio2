@@ -293,7 +293,12 @@ padding: 16px 0px;
 color: var(--white, #FFF);
 text-align: center;
 width: 100%;
-padding: 2% 15% 20% 15% !important;
+padding: 2% 15% 12% 15% !important;
+}
+
+.paddingclass
+{
+  padding-bottom: 7%;
 }
 
 .case-study-title
@@ -315,4 +320,49 @@ gap: 10px;
 border: none;
 background-color: white;
 color: var(--third-black, #333);
+}
+
+.case-study-image-box{
+  width: 32%;
+  max-width: 600px;
+  aspect-ratio: 1 / 1;
+  background-image: url('images/case-pingis.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+}
+/* Smooth transitions for child elements */
+.case-study-image-box,
+.read-case-stude-button {
+  transition: all 0.4s ease;
+}
+
+/* Hovering container triggers image scale */
+.containerwithimage:hover .case-study-image-box {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* optional depth */
+}
+
+/* Hovering container triggers button color change */
+.containerwithimage:hover .read-case-stude-button {
+  background-color: var(--secondary-black);
+  color: #fff;
+  padding: 12px 24px;
+}
+
+.case-study-container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+}
+.containerwithimage
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10%; /* ← add space between the containers */
 }
