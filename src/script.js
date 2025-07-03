@@ -1,16 +1,20 @@
-let lastScrollY = window.scrollY;
-const navbar = document.getElementById('navbar');
+document.addEventListener('DOMContentLoaded', () => {
+  const navbar = document.getElementById('navbar');
+  let lastScrollY = window.scrollY;
 
-window.addEventListener('scroll', () => {
-  window.requestAnimationFrame(() => {
-    if (window.scrollY > lastScrollY && window.scrollY > 100) {
-      navbar.classList.add('hide-nav');  // scroll down = hide
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+      navbar.classList.add('hide-nav');
     } else {
-      navbar.classList.remove('hide-nav'); // scroll up = show
+      navbar.classList.remove('hide-nav');
     }
-    lastScrollY = window.scrollY;
+
+    lastScrollY = currentScrollY;
   });
 });
+
 
 const reveals = document.querySelectorAll('.reveal');
 
