@@ -304,7 +304,7 @@ padding: 2% 15% 12% 15% !important;
 
 .paddingclass
 {
-  padding-bottom: 7%;
+  padding-bottom: 3%;
 }
 
 .case-study-title
@@ -326,6 +326,7 @@ gap: 10px;
 border: none;
 background-color: white;
 color: var(--third-black, #333);
+cursor: pointer;
 }
 
 .case-study-image-box{
@@ -390,3 +391,93 @@ color: var(--third-black, #333);
   color: #FFF;
 }
 
+.my-image {
+  width: 10vw;           /* or 100%, 50vw, etc. */
+  height: auto;          /* or auto, 50vh, etc. */
+  aspect-ratio: 1 / 1;
+  
+  background-image: url('images/image.svg');
+  background-size: cover;          /* fills container, may crop */
+  background-position: center;     /* centers the image */
+  background-repeat: no-repeat;    /* prevents tiling */
+}
+
+.para-aboutus-right-side
+{
+  color: var(--white, #FFF);
+}
+
+ .linkedin-icon path {
+    fill: #808080;
+    transition: fill 0.3s ease;
+  }
+
+  .linkedin-icon:hover path {
+    fill: #0077B5; /* Change to your desired hover color */
+  }
+
+  .behance-icon path {
+    fill: #808080;
+    transition: fill 0.3s ease;
+  }
+
+  .about-us-download
+  {
+display: inline-flex;
+padding: 12px 24px;
+justify-content: center;
+align-items: center;
+/* gap: 10px; */
+background: var(--primary-colour, #E63946);
+color: var(--white);
+  white-space: nowrap;  
+  }
+
+  .behance-icon:hover path {
+    fill: #1769FF; /* Change to your desired hover color */
+  }
+
+  
+  .insta-icon path {
+    fill: #808080;
+    transition: fill 0.3s ease;
+  }
+
+  .insta-icon:hover path {
+    fill: #E1306C; /* Change to your desired hover color */
+  }
+
+.logo-social-media
+{
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+
+}
+
+.right-side-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 30px;
+  /* border: #1769FF 2px solid; */
+  width: 70%;
+  padding-right: 10%;
+}
+.leftsideofaboutus
+{
+   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* gap: 20px; */
+  /* border: #1769FF 2px solid; */
+}
+.aboutus-content
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  /* border: #1769FF 2px solid; */
+  padding-bottom: 7%;
+}
