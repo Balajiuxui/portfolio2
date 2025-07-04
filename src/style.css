@@ -508,11 +508,11 @@ color: var(--white);
 }
 .project-card {
   flex: 0 0 80vw;
-  height: auto; /* ✅ Correct unit */
+  height: 80%; /* ✅ Correct unit */
   box-sizing: border-box;
-  padding: 40px;
-  background: #f3f3f3;
-  border-right: 1px solid #ddd;
+  padding-top: 2%;
+  /* background: #f3f3f3; */
+  /* border-right: 1px solid #ddd; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -523,40 +523,53 @@ color: var(--white);
 
 /* Images, text, buttons */
 .project-card img {
+  width: 40vw;
   max-width: 100%;
   max-height: 70vh;      /* ✅ NEW: prevents tall image overflow */
   object-fit: contain;   /* ✅ ensures the whole image fits inside */
   margin-bottom: 20px;
+  margin-top: 5%;
   /* aspect-ratio: 16/9; */
 }
 
 .project-card h2,
-.project-card p,
-.project-card button {
+.project-card p
+{
   width: 100%;
-  max-width: 500px;
+  max-width: 1200px;
   margin-left: 0;   /* Align text to the left */
 }
 
 .project-card h2 {
-  font-size: 24px;
-  margin: 10px 0;
+  color: var(--third-black, #333);
+
+
 }
 
 .project-card p {
-  max-width: 500px;
-  color: #555;
-  margin-bottom: 20px;
+color: var(--fourth-black, #4C4C4C);
 }
 
 .project-card button {
   padding: 12px 24px;
   font-size: 16px;
-  background: black;
-  color: white;
-  border: none;
+  border: 1px solid var(--grey, #666);
+  background-color: white; /* Set default background */
+  color: var(--third-black, #333); /* Default text color */
+
+  font-family: Manrope;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-card button:hover {
+  background-color: black; /* Hover background */
+  color: white; /* Hover text color */
 }
 /* ✅ Tablet & Mobile layout (vertical scroll) */
 @media (max-width: 1023px) {
@@ -568,10 +581,10 @@ color: var(--white);
 
   .projects-container {
     display: block !important;
-    height: auto !important;
+    height: 100vh !important;
     width: 100% !important;
     overflow: visible !important;
-     height: auto !important;
+    
   
   }
 
@@ -596,3 +609,29 @@ color: var(--white);
   height: 30px;
 }
 
+.text-content
+{
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  /* border: #1769FF 2px solid; */
+  width: 100%;
+}
+
+.withimage
+{
+   /* border: #1769FF 2px solid; */
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 2%;
+}
+
+@media (max-width: 767px) {
+  .projects {
+    display: none;
+  }
+}

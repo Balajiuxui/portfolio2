@@ -30,6 +30,7 @@ if (window.innerWidth >= 1024) {
   reveals.forEach(reveal => observer.observe(reveal));
 }
 
+
 if (window.innerWidth >= 1024) {
   gsap.registerPlugin(ScrollTrigger);
 
