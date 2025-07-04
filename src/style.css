@@ -625,7 +625,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 2rem;
+  /* padding: 2rem; */
   color: black;
 }
 
@@ -691,4 +691,69 @@ font-style: normal;
 font-weight: 500;
 line-height: 28px; /* 155.556% */
 letter-spacing: 0.2px;
+}
+
+
+
+.section-CTA-heading
+{
+color: var(--white2, #E5E5E5);
+padding-top: 6% !important;
+}
+
+.conta-CTA
+{
+  background: var(--secondary-black, #1A1A1A);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 2px;
+}
+
+.content-detailes-heading
+{
+  color: var(--grey-2, #808080);
+}
+
+.detail-CTA
+{
+  color: var(--white, #FFF);
+
+/* heading6 */
+font-family: "Clash Display";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 155.556% */
+letter-spacing: 0.2px;
+}
+
+.contact-detailes
+{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-details-warp
+{
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.withbuttom
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+  padding: 0% 2% 6% 4%;
+
+}
+
+.first-section-CTA
+{
+  padding-left: 4%;
 }
