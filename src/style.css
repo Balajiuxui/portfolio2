@@ -1,6 +1,16 @@
 @import url('typography.css');
 html {
   scroll-behavior: smooth;
+
+  height: auto !important;
+}
+
+@media (max-width: 1023px) {
+  html, body {
+    overflow-y: auto !important;
+    height: auto !important;
+    scroll-behavior: auto; /* or try 'smooth' */
+  }
 }
 
 *{
@@ -11,8 +21,13 @@ html {
   box-sizing: border-box;
 }
 
+
 body {
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
+  /* width: 100%; */
+    height: auto !important;
 }
 
 
@@ -480,5 +495,104 @@ color: var(--white);
   align-content: space-between;
   /* border: #1769FF 2px solid; */
   padding-bottom: 7%;
+}
+
+
+/* Desktop only */
+.projects-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  gap: 24px;
+  /* padding-top: 24px; */
+}
+.project-card {
+  flex: 0 0 80vw;
+  height: auto; /* ✅ Correct unit */
+  box-sizing: border-box;
+  padding: 40px;
+  background: #f3f3f3;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* Images, text, buttons */
+.project-card img {
+  max-width: 100%;
+  max-height: 70vh;      /* ✅ NEW: prevents tall image overflow */
+  object-fit: contain;   /* ✅ ensures the whole image fits inside */
+  margin-bottom: 20px;
+  /* aspect-ratio: 16/9; */
+}
+
+.project-card h2,
+.project-card p,
+.project-card button {
+  width: 100%;
+  max-width: 500px;
+  margin-left: 0;   /* Align text to the left */
+}
+
+.project-card h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.project-card p {
+  max-width: 500px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.project-card button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* ✅ Tablet & Mobile layout (vertical scroll) */
+@media (max-width: 1023px) {
+
+   html, body {
+    overflow-x: hidden !important;
+  }
+
+
+  .projects-container {
+    display: block !important;
+    height: auto !important;
+    width: 100% !important;
+    overflow: visible !important;
+     height: auto !important;
+  
+  }
+
+  .project-card {
+    width: 100% !important;
+     max-width: 100% !important;
+    height: auto;
+    padding: 40px 20px;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    text-align: left;
+    overflow: hidden;
+  }
+}
+
+.paddingbelow
+{
+  width: 100%;
+  height: 30px;
 }
 
