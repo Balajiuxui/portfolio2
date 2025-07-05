@@ -55,15 +55,18 @@ window.addEventListener('resize', () => {
 });
 
 
- const currentPath = window.location.pathname;
-  const navLinks = document.querySelectorAll('.nav-links a');
+const currentPath = window.location.pathname;
+const navLinks = document.querySelectorAll('.nav-links a');
 
-  navLinks.forEach(link => {
-    // Skip download links
-    if (link.hasAttribute('download')) return;
+navLinks.forEach(link => {
+  // Remove all existing active-link classes first
+  link.classList.remove('active-link');
 
-    // Highlight if href matches the current path
-    if (link.href.includes(`${currentPath}`)) {
-      link.classList.add('active-link');
-    }
-  });
+  // Skip download links
+  if (link.hasAttribute('download')) return;
+
+  // Add class if current link matches current path
+  if (link.href.includes(currentPath)) {
+    link.classList.add('active-link');
+  }
+});
