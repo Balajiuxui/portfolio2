@@ -1,0 +1,26 @@
+@import url('typography.css');
+@import url('style.css');
+
+.custom-image {
+  height: 100%;
+  width: auto; /* keeps original width ratio */
+  object-fit: cover;
+  border-radius: 4px;
+  max-width: 450px; /* Optional: control image width */
+}
+
+
+.withimage-aboutus-landing-section {
+    padding-top: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; /* This makes the image and text same height */
+  gap: 40px; /* adjust space between image and text */
+  /* flex-wrap: wrap; /* for responsiveness */
+}
+
+.text-icon
+{
+    display: flex;
+    flex-direction: column;
+}

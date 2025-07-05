@@ -59,6 +59,10 @@ a {
   text-decoration: none;
 }
 
+
+
+
+
 .nav-links {
   display: flex;
   gap: 24px;
@@ -82,6 +86,23 @@ nav {
   transition: transform 0.8s ease-in-out;
   will-change: transform;
 }
+
+.active-link {
+  color: var(--primary-colour, #e63946);
+  font-weight: 700;
+  position: relative;
+}
+
+.active-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-colour, #e63946);
+}
+
 
 .logo {
   color: var(--white);
@@ -446,6 +467,22 @@ ul {
   padding-bottom: 7%;
 }
 
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  color: var(--grey3);
+font-family: Manrope;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 26px; /* 162.5% */
+  border-radius: 9999px; /* Fully rounded pill */
+}
+
 /* Desktop only */
 .projects-container {
   display: flex;
@@ -756,4 +793,56 @@ letter-spacing: 0.2px;
 .first-section-CTA
 {
   padding-left: 4%;
+}
+
+.site-footer {
+  background-color: #111;
+  color: #777;
+  padding: 40px 20px;
+  font-family: 'Inter', sans-serif;
+  margin-top: 10%;
+}
+
+.footer-top {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.dev-label {
+ color: #6D6D6D;
+font-family: "Clash Display";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.footer-name {
+color: #6D6D6D;
+font-family: "Clash Display";
+font-size: 199.6px;
+font-style: normal;
+font-weight: 400;
+line-height: 229.6px; /* 115.03% */
+letter-spacing: -10px;
+}
+
+.footer-top .copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.logo-social-media {
+  display: flex;
+  gap: 16px;
 }

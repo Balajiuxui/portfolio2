@@ -54,3 +54,16 @@ window.addEventListener('resize', () => {
   ScrollTrigger.refresh();
 });
 
+
+ const currentPath = window.location.pathname;
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  navLinks.forEach(link => {
+    // Skip download links
+    if (link.hasAttribute('download')) return;
+
+    // Highlight if href matches the current path
+    if (link.href.includes(`${currentPath}`)) {
+      link.classList.add('active-link');
+    }
+  });
