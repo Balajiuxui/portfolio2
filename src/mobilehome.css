@@ -1,0 +1,170 @@
+@import url("typography.css");
+@import url('style.css');
+
+@media (max-width: 480px) {
+  .landingsectionh1 {
+    padding: 24px  0 24px 0 !important;
+    text-align: left;
+    margin-top: 20%;
+  }
+
+  .section-divider {
+    margin-bottom: 16px;
+  }
+
+  .landing-section-below-content {
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 20px;
+    text-align: left;
+    /* background-color: aqua; */
+  }
+
+  .body-large {
+    width: 100% !important;
+    padding: 0;
+    text-align: left;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .view-work-btn {
+    width: 100%;
+    padding: 12px 0;
+    /* font-size: 14px;
+    line-height: 24px; */
+    text-align: center;
+  }
+
+  .mailid {
+    width: 100%;
+    padding-top: 24px;
+  }
+
+  .icon-wrapper {
+    gap: 12px;
+  }
+
+  .mail-id-text {
+    font-size: 14px;
+    line-height: 22px;
+    word-break: break-word;
+  }
+
+  .landing .container {
+    padding: 0 20px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .mockup-section {
+    flex-direction: column;
+    padding: 48px 16px 40px 16px;
+    min-height: auto;
+    text-align: left;
+  }
+
+  .mockup-section-heading {
+    /* font-size: clamp(24px, 6vw, 32px);
+    line-height: clamp(30px, 7vw, 40px); */
+    text-align: left;
+    padding-bottom: 16px;
+  }
+
+  .mockup-section-para {
+    /* font-size: 16px;
+    line-height: 26px; */
+    text-align: left;
+    padding-bottom: 24px !important;
+  }
+
+  .image-mockup {
+    width: 150%;
+    height: auto;
+    margin: 0;
+  }
+
+  .mockup-section .container {
+    padding: 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .ux-process {
+    padding: 60px 16px 40px 16px;
+  }
+
+  .title-with-icon {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding-top: 32px;
+  }
+
+  .ux-process-title {
+    font-size: clamp(20px, 5.5vw, 26px);
+    line-height: 32px;
+    padding-top: 0;
+  }
+
+  .ux-process-para {
+    width: 100% !important;
+    font-size: 22px !important;
+    line-height: 30px !important;
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+
+  .eachblockrow {
+    flex-direction: column !important;
+    gap: 48px !important;
+    padding-bottom: 48px;
+  }
+
+  .eachblock {
+    width: 100%;
+  }
+
+  .eachblock-title {
+    flex-direction: column;
+    gap: 6px;
+    padding-bottom: 8px;
+  }
+
+  .ux-process-section-number,
+  .ux-process-section-title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .eachblockpara {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 8px 0;
+  }
+
+  .eachblocksubtitle {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 12px 0;
+  }
+
+  .overline-eachblock {
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 12px !important;
+  }
+
+ section.ux-process .ux-process-last-test {
+    padding: 0 !important;
+    text-align: left;
+  }
+
+  ul {
+    padding-left: 16px;
+  }
+}

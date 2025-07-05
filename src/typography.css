@@ -208,3 +208,44 @@
   text-transform: capitalize;
 }
 
+
+@media (max-width: 1023px) {
+  .heading-0 { font-size: 72px; line-height: 84px; padding: 32px 0 24px 0; }
+  .heading-1 { font-size: 48px; line-height: 60px; padding: 28px 0 20px 0; }
+  .heading-2 { font-size: 36px; line-height: 48px; padding: 24px 0 18px 0; }
+  .heading-3 { font-size: 28px; line-height: 38px; padding: 20px 0 14px 0; }
+  .heading-4 { font-size: 22px; line-height: 32px; padding: 16px 0 12px 0; }
+  .heading-5 { font-size: 18px; line-height: 28px; padding: 12px 0 8px 0; }
+  .heading-6 { font-size: 16px; line-height: 26px; padding: 8px 0 4px 0; }
+  .heading-7 { font-size: 20px; line-height: 28px; padding: 14px 0 10px 0; }
+  .heading-8 { font-size: 16px; line-height: 26px; padding: 12px 0 8px 0; }
+
+  .body-large { font-size: 18px; line-height: 26px; padding: 14px 0 10px 0; }
+  .body-base  { font-size: 16px; line-height: 24px; padding: 14px 0; }
+  .body-small { font-size: 12px; line-height: 22px; padding: 10px 0 6px 0; }
+
+  .button     { font-size: 14px; line-height: 24px; padding: 10px 20px; }
+  .overline   { font-size: 11px; line-height: 22px; padding: 4px; }
+  .caption    { font-size: 11px; line-height: 22px; padding: 4px 0; }
+}
+
+
+@media (max-width: 480px) {
+  .heading-0 { font-size: 48px; line-height: 60px; padding: 24px 0 20px 0; }
+  .heading-1 { font-size: 36px; line-height: 48px; padding: 20px 0 16px 0; }
+  .heading-2 { font-size: 28px; line-height: 40px; padding: 18px 0 14px 0; }
+  .heading-3 { font-size: 22px; line-height: 32px; padding: 16px 0 12px 0; }
+  .heading-4 { font-size: 20px; line-height: 30px; padding: 14px 0 10px 0; }
+  .heading-5 { font-size: 16px; line-height: 26px; padding: 10px 0 6px 0; }
+  .heading-6 { font-size: 14px; line-height: 24px; padding: 6px 0 4px 0; }
+  .heading-7 { font-size: 18px; line-height: 26px; padding: 12px 0 8px 0; }
+  .heading-8 { font-size: 14px; line-height: 24px; padding: 10px 0 6px 0; }
+
+  .body-large { font-size: 16px; line-height: 24px; padding: 12px 0 8px 0; }
+  .body-base  { font-size: 14px; line-height: 22px; padding: 12px 0; }
+  .body-small { font-size: 11px; line-height: 20px; padding: 8px 0 4px 0; }
+
+  .button     { font-size: 13px; line-height: 22px; padding: 8px 16px; }
+  .overline   { font-size: 10px; line-height: 20px; padding: 4px; }
+  .caption    { font-size: 10px; line-height: 20px; padding: 4px 0; }
+}

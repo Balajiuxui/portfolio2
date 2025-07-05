@@ -10,6 +10,8 @@
     <!-- Link to CSS -->
     <link rel="stylesheet" href="typography.css" />
     <!-- Link to typo -->
+     <link rel="stylesheet" href="mobilehome.css" />
+    <!-- Link to typo -->
 
     <link rel="stylesheet" href="scroll-animations.css" />
     <link
@@ -18,17 +20,22 @@
     />
   </head>
   <body>
-    <nav class="navbar" id="navbar">
-      <div class="container navbar2">
-        <a href="#" class="logo heading-5 reveal from-top">Balaji</a>
-        <div class="nav-links">
-          <a class="heading-8 reveal from-top" href="./index.html">Home</a>
-          <a class="heading-8 reveal from-top" href="#">Work</a>
-          <a class="heading-8 reveal from-top" href="aboutme.html">About Me</a>
-          <a class="heading-8 reveal from-top" href="#" download>Resume</a>
-        </div>
-      </div>
-    </nav>
+   <nav class="navbar" id="navbar">
+  <div class="container navbar2">
+    <a href="#" class="logo heading-5 reveal from-top">Balaji</a>
+
+    <!-- HAMBURGER BUTTON -->
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+
+    <!-- NAV LINKS -->
+    <div class="nav-links" id="nav-links">
+      <a class="heading-8 reveal from-top" href="./index.html">Home</a>
+      <a class="heading-8 reveal from-top" href="#">Work</a>
+      <a class="heading-8 reveal from-top" href="aboutme.html">About Me</a>
+      <a class="heading-8 reveal from-top" href="#" download>Resume</a>
+    </div>
+  </div>
+</nav>
 
     <section class="landing">
       <div class="container">
@@ -500,6 +507,15 @@ Despite his league of prolonging projects, he enred I learn every possible detai
 </footer>
 
 
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<button class="menu-toggle" id="menu-toggle">
+  <i data-lucide="menu"></i>
+</button>
+
+<script>
+  lucide.createIcons(); // Activate Lucide icons
+</script>
 
 
  <!-- GSAP & ScrollTrigger -->
