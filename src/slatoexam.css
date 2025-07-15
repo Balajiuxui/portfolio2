@@ -1,0 +1,62 @@
+@import url('typography.css');
+@import url('style.css');
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.container2 {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;  /* 24px */
+  padding-right: 1.5rem; /* 24px */
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;  /* 16px */
+    padding-right: 1rem; /* 16px */
+  }
+}
+
+
+.header-main-heading
+{
+  color: var(--fourth-black, #4C4C4C);
+  padding-top: 15% !important;
+}
+
+.header-main-para
+{
+    color: var(--grey, #595858) !important;
+    width: 80% !important;
+    padding-bottom: 32px !important;
+}
+
+.content-title
+{
+color: #7F848D;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px; /* 162.5% */
+}
+
+.content-role
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.allcontentwarp
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+}
