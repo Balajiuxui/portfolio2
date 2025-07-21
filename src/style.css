@@ -855,22 +855,26 @@ letter-spacing: 0.2px;
 }
 
 .dev-label {
- color: #6D6D6D;
-font-family: "Clash Display";
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  color: #6D6D6D;
+  font-family: "Clash Display", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  /* Responsive font-size: min 14px, ideal 1.5vw, max 18px */
+  font-size: clamp(14px, 1.5vw, 18px);
 }
 
 .footer-name {
-color: #6D6D6D;
-font-family: "Clash Display";
-font-size: 199.6px;
-font-style: normal;
-font-weight: 400;
-line-height: 229.6px; /* 115.03% */
-letter-spacing: -10px;
+  color: #6D6D6D;
+  font-family: "Clash Display", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.05em;
+  
+  /* Responsive font size from 40px to 200px based on viewport */
+  font-size: clamp(40px, 10vw, 200px);
 }
 
 .footer-top .copyright {

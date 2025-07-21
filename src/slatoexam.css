@@ -60,3 +60,84 @@ line-height: 26px; /* 162.5% */
     flex-direction: row;
     gap: 24px;
 }
+
+
+.para2
+{
+  color: var(--secondary-black, #1A1A1A)!important ;
+  width: 100% !important;
+}
+
+/* Desktop Layout */
+.main-warrped {
+  display: flex;
+  gap: 2%;
+  padding-top: 2%;
+  align-items: stretch;
+  width: 100%;
+}
+
+/* Left side with two stacked cards */
+.leftside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2%;
+}
+
+.lefttop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  border: 1.5px solid var(--grey4, #B3B3B3); 
+  flex: 1 1 48%;
+  padding: 1.5em;
+  box-sizing: border-box;
+}
+
+/* Right side single tall card */
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  padding-top: 16px;
+  text-align: center;
+  border-radius: 12px;
+  border: 1.5px solid var(--grey4, #B3B3B3);
+}
+
+.mockup-goals-img {
+  margin-top: auto;
+  align-self: center;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ✅ Mobile: stack all one-by-one */
+@media (max-width: 768px) {
+  .main-warrped {
+    flex-direction: column;
+  }
+
+  .right,
+  .leftside,
+  .lefttop {
+    width: 100%;
+  }
+
+  .leftside {
+    flex-direction: column;
+    padding-top: 2%;
+  }
+
+  .lefttop {
+    margin-bottom: 2%;
+    flex: none;
+  }
+}
