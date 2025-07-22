@@ -183,3 +183,25 @@ line-height: 26px; /* 162.5% */
   width: 100%;
    gap: 16px;
 }
+
+.totalcontent
+{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch
+}
+
+.totalrightsidecontent
+{
+  width: fit-content !important;
+  height: fit-content !important;
+}
+
+.totalrightsidecontent img {
+ 
+   width: 70%;
+  height: auto;
+  object-fit: cover; /* Optional: crop/fill effect */
+  padding-bottom: 0 !important;
+ 
+}
