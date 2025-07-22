@@ -72,7 +72,7 @@ line-height: 26px; /* 162.5% */
 .main-warrped {
   display: flex;
   gap: 2%;
-  padding-top: 2%;
+  padding-top: 1%;
   align-items: stretch;
   width: 100%;
 }
@@ -140,4 +140,46 @@ line-height: 26px; /* 162.5% */
     margin-bottom: 2%;
     flex: none;
   }
+}
+
+.myrolepara
+{
+  text-align: left !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+}
+
+.content-list-each
+{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.content-list-each-p 
+{
+  padding: 12px 0 !important;
+}
+
+.content-listing
+{
+  display: flex;
+ flex-direction: row;
+  gap: 24px;
+}
+
+.leftside-content
+{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.rightside-content
+{
+   display: flex;
+  flex-direction: column;
+  width: 100%;
+   gap: 16px;
 }
