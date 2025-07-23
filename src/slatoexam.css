@@ -198,10 +198,40 @@ line-height: 26px; /* 162.5% */
 }
 
 .totalrightsidecontent img {
- 
-   width: 70%;
+  width: 70%;
   height: auto;
   object-fit: cover; /* Optional: crop/fill effect */
-  padding-bottom: 0 !important;
- 
+  /* padding-bottom: 0 !important; */
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 24px;
+  /* background-color: #f9f9f9;
+  border-radius: 16px; */
+  width: fit-content;
+  text-align: center;
+}
+
+.card-section
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 32px;
+}
+
+.imageclas2{
+  width:150%;
+  height: auto;
+  object-fit: cover; /* Optional: crop/fill effect */
+ /* padding: auto; */
+ justify-content: center;
+ align-content: center;
+ margin: auto;
 }

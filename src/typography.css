@@ -125,6 +125,13 @@
   line-height: 28px;
 }
 
+.left-align {
+  display: flex;
+  justify-content: flex-start; /* aligns items horizontally to the left */
+  align-items: flex-start;     /* aligns items vertically to the top */
+  text-align: left;
+}
+
 
 .body-base {
   display: inline-flex;
