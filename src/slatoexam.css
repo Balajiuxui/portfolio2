@@ -235,3 +235,45 @@ line-height: 26px; /* 162.5% */
  align-content: center;
  margin: auto;
 }
+
+.Impact-body-test
+{
+  color: var(--fourth-black);
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+width: 100%;
+}
+
+.content-impact
+{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding: 13px 16px;
+  border-radius: 6px;
+border: 1px solid var(--grey3, #999);
+width: 100%;
+}
+
+.impact-content-group
+{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 2%;
+}
+
+
+
+.zoom-on-hover {
+  transition: transform 0.4s ease;
+  cursor: zoom-in;
+  display: block;
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.05) !important;
+}
